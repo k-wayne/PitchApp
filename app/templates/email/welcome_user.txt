@@ -1,3 +1,6 @@
 Hello {{user.username}}
-Welcome to PitchApp
-We have just seen you have signed up to our application and want to welcome you to the family. Please enjoy the PitchesApp from different categories posted by other users.
+Welcome to PitchApp!!
+Thank you for signing up to our application and we want to welcome you to the family. 
+Please explore the app and particpate in pitching your ideas.
+
+Cheers!!
