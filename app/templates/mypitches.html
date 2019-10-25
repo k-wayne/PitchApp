@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% for pitch in pitches %}
+        <p>{{pitch.title}}</p>
+        <p>{{pitch.description}}</p>
+        <p>{{pitch.posted}}</p>
+        <p>Posted by: {{pitch.user.username}}</p>
+        <a href="{{url_for('main.upvote',pitch_id = pitch.id)}}">Upvote<span>{{pitch.upvotes.count()}}</span></a>
+        <a href="{{url_for('main.downvote',pitch_id = pitch.id)}}">Downvote<span>{{pitch.downvotes.count()}}</span></a>
+        <div class="panel-footer"><a href="{{url_for('main.new_comment',pitch_id = pitch.id)}}"> Add a comment</a>             
+    {% endfor %}
+{% endblock %}
